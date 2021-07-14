@@ -2,3 +2,14 @@ language: generic
 script:
     - bash scripts/hello.sh
     - bash scripts/test_hello.sh
+
+deploy:
+  provider: releases
+  api_key:
+    secure: "bPEF5m5AoENumH8jV+5334ROeAsTze8LR6fdvax7qfELUgNXnT4CuQgSsdBo+c8SA1x4c97+bneMge2rE8I2Bi0F3UeJv0nXqHsutDtxPgQhDeLXL7cMf+bMpNptvyMh7Ot+zzmze0um+pa9j6oHouhdeBQ8AA0raahKI46aSJtNHOtGNrfpNqAJRKx9h2dHCaMAxVHtEaRlNty0YIyUf7PA/Lq961WeAJg8vkgNFFtMPduW10gkgpshHJ99tGcdPEjz4jgqDp6A6OB9cYrvEmr0eXWJhfpXAl/3yg+oL8Dp+Mg9NL8kEXyWFQXQT0BBSlEWgrbShi2mFQIB3owm5ugIeHt6VG5sI44f1nUTM9Z5H3L+RFUHDuSl87lUjH+vU8qek9hd9hOlsCZgqBy4v8GzSMve5AUL4c9mpiYQ6ffxH1MV9ljdTeL0AfL5DpKx2FT0GYbPsj9TnLar19W3cr8Aem9hjjOZvBl4K7u2669z/KR4B1Z/cgpG9iqBg4895EFzJL1gK+mtWTLk2+2rj53zYNTNgG+4efqLdSJWJJh/sh+EjqHqZMzFCZ3mdFdHKOudamy9naMglNnHL5UqwYPGDNeohBp4aGINAlDmAUjpEBeMJiNlPsOlYIX5wl7Xk0FoYrAeX0b5M53DEDDuKxPgYNe2+SKA0zNOLj1zFFo="
+  file: "hello"
+  skip_cleanup: true
+  edge: true
+  on:
+    tags: true
+    repo: viv-garot/scripts-go-release
