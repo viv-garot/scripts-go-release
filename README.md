@@ -1,16 +1,20 @@
 # scripts-go
-Create a golang program that prints hello in a Vagrant box with travis-ci checking the built program prints hello successfully 
+Create a golang program that prints hello in a Vagrant box with travis-ci :
+ - checking the built program prints hello successfully 
+ - upload hello into GitHub release after tag creation
 
 ### Pre-requirements
 
 * [Vagrant](https://www.vagrantup.com/downloads)
 * [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+* [travis-ci account](https://travis-ci.com)
 
 ### How to use this repo
 
 - Clone
 - Build
-- Travis
+- Create a TAG
+- Check deployment
 
 ---
 
@@ -75,11 +79,7 @@ hello world
 Connection to 127.0.0.1 closed.
 ```
 
-### Optional : Check build status in Travis
-
-#### Pre-requirements
-
-[travis-ci account](https://travis-ci.com)
+### Check build status in Travis
 
 #### Import the repo in GitHub
 
@@ -88,3 +88,26 @@ Connection to 127.0.0.1 closed.
 #### Check the build in travis-ci.com
 
 ![image](https://user-images.githubusercontent.com/85481359/125571873-a2885413-41ad-4e0a-957c-ed709e2d0f80.png)
+
+
+### Create a TAG in GitHub
+
+![image](https://user-images.githubusercontent.com/85481359/125578189-08b7e3ec-4dad-4e91-9584-d6fac0cbd1fc.png)
+
+
+![image](https://user-images.githubusercontent.com/85481359/125578336-29320ba1-b766-40ff-b719-14d20d87f5f9.png)
+
+
+![image](https://user-images.githubusercontent.com/85481359/125578562-325c9d8a-6e3d-421f-897e-37878256b6dd.png)
+
+
+### Check your build in travis-ci has run the deployment successfully
+
+![image](https://user-images.githubusercontent.com/85481359/125579016-d1703ccd-c437-48f3-a502-8bb89fd208cf.png)
+
+
+### Back to the GitHub repo, the hello file should now be available in your release
+
+![image](https://user-images.githubusercontent.com/85481359/125579193-b9727407-4287-4754-9fca-9cb3e1692099.png)
+
+
