@@ -1,6 +1,9 @@
 language: generic
-script:
+
+before_script:
     - bash scripts/hello.sh
+    
+script:
     - bash scripts/test_hello.sh
 
 deploy:
