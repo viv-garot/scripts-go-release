@@ -1,7 +1,8 @@
-# scripts-go
-Create a golang program that prints hello in a Vagrant box with travis-ci :
- - checking the built program prints hello successfully 
- - upload hello into GitHub release after tag creation
+# scripts-go-release
+
+Create a golang program that prints "hello world" in a Vagrant box. We'll also use travis-ci hosted service to :
+ - Test the built program prints hello world successfully (CI)
+ - Upload the hello file into GitHub release after tag creation (CD)
 
 ### Pre-requirements
 
@@ -81,11 +82,11 @@ Connection to 127.0.0.1 closed.
 
 ### Check build status in Travis
 
-#### Import the repo in GitHub
+### Import the repo in GitHub
 
 ![image](https://user-images.githubusercontent.com/85481359/125571521-6890e462-1258-4100-8f3a-5c6047815f50.png)
 
-#### Check the build in travis-ci.com
+### Check the build in travis-ci.com
 
 ![image](https://user-images.githubusercontent.com/85481359/125571873-a2885413-41ad-4e0a-957c-ed709e2d0f80.png)
 
